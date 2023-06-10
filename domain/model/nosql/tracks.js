@@ -1,4 +1,4 @@
-import { Schema, model, mongoose } from mongoose;
+import { Schema, model, mongoose } from 'mongoose';
 
 const TracksScheme = Schema(
     {
@@ -11,7 +11,7 @@ const TracksScheme = Schema(
             nationality: { type: 'String', required: true }
         },
         duration: { type: "Number", required: true },
-        mediaId: { type: mongoose.types.ObjectId, required: true }
+        mediaId: { type: mongoose.Types.ObjectId, required: true }
     },
     {
         timestamps: true,
